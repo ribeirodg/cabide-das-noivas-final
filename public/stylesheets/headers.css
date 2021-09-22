@@ -38,5 +38,13 @@
   height: auto;
   width: auto;
   max-width: 100px;
-  max-height: 100px;
+  max-height: 100px;  
+}
+.botoes button:hover {
+  background-color: rgb(87, 85, 86);
+}
+
+.botoes button img {
+  width: 30px;
+  height: 30px;
 }

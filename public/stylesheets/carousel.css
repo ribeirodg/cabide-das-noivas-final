@@ -32,6 +32,7 @@ body {
   left: 0;
   min-width: 100%;
   height: 32rem;
+  object-fit: scale-down;
 }
 
 
@@ -96,4 +97,8 @@ body {
   width: auto;
   max-width: 400px;
   max-height: 600px;
+}
+.marketing img {
+  outline: 1px solid rgb(44, 43, 43);
+  outline-offset: -10px;
 }

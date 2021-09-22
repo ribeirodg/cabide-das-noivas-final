@@ -4,5 +4,11 @@ module.exports = {
       },
       login: (req, res) => {
         res.render('login', { title: 'Cabide das Noivas - Login' });
+      },
+      ajuda: (req, res) => {
+        res.render('ajuda', { title: 'Cabide das Noivas - Ajuda' });
+      },
+      carrinho: (req, res) => {
+        res.render('carrinho', { title: 'Cabide das Noivas - Carrinho' });
       }
 }

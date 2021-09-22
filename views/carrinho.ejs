@@ -1,0 +1,38 @@
+<%- include('head') %>
+  <%- include('header') %>
+  <body>
+    <main> 
+                <div class= "content2" id="carrinho">
+                    <form method="POST" action="/frete">
+                        <h1>Meu Carrinho</h1>
+                        <input type='hidden' name='id' value='<%= vestido.id %>'>
+                        <p>
+                            <img src="<%= vestido.img %>">
+                        </p>
+                        <p>
+                            <label for="preco">Valor do produto</label> 
+                            <p id="preco" name="preco"> <%= vestido.preco %> </p>
+                        </p>
+                        <p>
+                            <label for="descricao">Descrição do produto</label> 
+                            <p> <%= vestido.nome %> </p>
+                        </p> 
+                        <p>
+                            <label for="quantidade">Quantidade</label> 
+                            <input id="quantidade" name="quantidade" type="number">
+                        </p> 
+                        <p>
+                            <label for="subtotal">Subtotal</label> 
+                            <!-- <span id="subtotal"></span> -->
+                            <p id="subtotal"><%= vestido.Subtotal %></p>
+                        </p>    
+                        <p>
+                            <label for="cep">Digite seu CEP: </label>  
+                            <input id="cep" name="cep" type="text" placeholder="Digite seu CEP: " required="required"> 
+                        </p>
+                        <input type="submit" value="Calcular Frete"> 
+                    </form>
+                </div>
+    </main>
+    <script src="/scripts/CalculaSubTotal.js" ></script>
+  <%- include('footer') %>
