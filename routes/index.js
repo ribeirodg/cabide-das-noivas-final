@@ -6,6 +6,10 @@ var router = express.Router();
 router.get('/', CabideController.index);
 router.get('/login', CabideController.login);
 router.get('/ajuda', CabideController.ajuda);
-router.get('/carrinho', CabideController.carrinho);
+router.get('/carrinho/:id', CabideController.carrinho);
+router.get('/carrinho', CabideController.carrinhoVazio);
+router.get('/cadastroUsuario', CabideController.cadastroUsuario);
+router.get('/sobre', CabideController.sobre);
+router.get('/colecao', CabideController.colecao);
 
 module.exports = router;
