@@ -1,0 +1,10 @@
+<%- include('head') %>
+  <%- include('header') %>
+<% for(let vestido of vestidos) {%>
+    <article>
+        <h1><%=vestido.nome%></h1>
+        <img src="<%=vestido.img %>" alt="<%=vestido.nome %>">
+        <p><a class="btn btn-secondary" href="/carrinho/<%=vestido.id%>">Comprar</a></p>
+    </article>
+<%} %>
+  <%- include('footer') %>

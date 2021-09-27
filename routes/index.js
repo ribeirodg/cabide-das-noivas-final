@@ -11,5 +11,6 @@ router.get('/carrinho', CabideController.carrinhoVazio);
 router.get('/cadastroUsuario', CabideController.cadastroUsuario);
 router.get('/sobre', CabideController.sobre);
 router.get('/colecao', CabideController.colecao);
+router.get('/vestidos/:idColecao', CabideController.vestidos);
 
 module.exports = router;

@@ -1,278 +1,300 @@
 [
 {
     "id": 1,
-    "nome": "tomara-que-caia",
-    "Tamanhos": [
+    "nome": "Vestido Clássico",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "/images/1.png",
-    "destaque": true
+    "img": "/images/vestido0.jpg",
+    "destaque": true,
+    "colecao": 1
 },
 {
     "id": 2,
     "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "/images/vestido1.jpeg",
+    "destaque": true,
+    "colecao": 1
 },
 {
     "id": 3,
     "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "/images/vestido2.jpeg",
+    "destaque": true,
+    "colecao": 1
 },
 {
     "id": 4,
     "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "/images/vestido3.jpeg",
+    "destaque": true,
+    "colecao": 1
 },
 {
     "id": 5,
     "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "/images/vestido4.jpeg",
+    "destaque": true,
+    "colecao": 1
 },
 {
     "id": 6,
     "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "images/vestido5.jpeg",
+    "destaque": true,
+    "colecao": 1
 },
 {
     "id": 7,
     "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "images/vestido6.jpeg",
+    "destaque": true,
+    "colecao": 1
 },
 {
     "id": 8,
     "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "images/vestido7.jpeg",
+    "destaque": true,
+    "colecao": 1
 },
 {
     "id": 9,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Romântico",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "images/vestido8.png",
+    "destaque": true,
+    "colecao": 2
 },
 {
     "id": 10,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Romântico",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "images/vestido9.jpg",
+    "destaque": true,
+    "colecao": 2
 },
 {
     "id": 11,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Romântico",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "images/vestido10.jpg",
+    "destaque": true,
+    "colecao": 2
 },
 {
     "id": 12,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Romântico",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "images/vestido11.jpg",
+    "destaque": true,
+    "colecao": 2
 },
 {
     "id": 13,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Romântico",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
-    "img": "",
-    "destaque": true
+    "img": "images/vestido12.jpg",
+    "destaque": true,
+    "colecao": 2
 },
 {
     "id": 14,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Romântico",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
     "img": "",
-    "destaque": true
+    "destaque": true,
+    "colecao": 2
 },
 {
     "id": 15,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Romântico",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
     "img": "",
-    "destaque": true
+    "destaque": true,
+    "colecao": 2
 },
 {
     "id": 16,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Romântico",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
     "img": "",
-    "destaque": true
+    "destaque": true,
+    "colecao": 2
 },
 {
     "id": 17,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Sensual•",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
     "img": "",
-    "destaque": true
+    "destaque": true,
+    "colecao": 3
 },
 {
     "id": 18,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Sensual•",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
     "img": "",
-    "destaque": true
+    "destaque": true,
+    "colecao": 3
 },
 {
     "id": 19,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Sensual•",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
     "img": "",
-    "destaque": true
+    "destaque": true,
+    "colecao": 3
 },
 {
     "id": 20,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Sensual•",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
     "img": "",
-    "destaque": true
+    "destaque": true,
+    "colecao": 3
 },
 {
     "id": 21,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Sensual•",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
     "img": "",
-    "destaque": true
+    "destaque": true,
+    "colecao": 3
 },
 {
     "id": 22,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Sensual•",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
     "img": "",
-    "destaque": true
+    "destaque": true,
+    "colecao": 3
 },
 {
     "id": 23,
-    "nome": "Vestido Clássico",
-    "Tamanhos": [
+    "nome": "Vestido Sensual•",
+    "tamanhos": [
         "P",
         "M",
         "G"
     ],
     "preco": 75,
     "img": "",
-    "destaque": true
+    "destaque": 3
 }
 ]
