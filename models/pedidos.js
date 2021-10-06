@@ -24,5 +24,10 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'pedidos',
   });
+  pedidos.associate = (models) => {
+    pedidos.hasMany(models.pedidos_has_vestido, {as:'vestidos', foreignKey:'pedidos_id'});
+    pedidos.belongsTo(models.usuario, {as:'usuario', foreignKey:'usuario_id'});
+    pedidos.belongsTo(models.enderecos_usuario, {as:'endereco', foreignKey:'enderecos_usuario_id'});
+  }
   return pedidos;
 };

@@ -22,5 +22,10 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'tamanho_vestido',
   });
+  tamanho_vestido.associate = (models) => {
+    
+    tamanho_vestido.belongsTo(models.vestido, {as:'tamanho', foreignKey:'vestido_id'});
+  }
+   
   return tamanho_vestido;
 };
