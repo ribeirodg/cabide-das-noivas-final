@@ -1,0 +1,164 @@
+Passo-a-passo para criação de migrations, seeders e models
+
+Vá no workbench e no DER clique em file>export>forward engeniring>nex>next>finish
+
+Lembre-se de salvar o sql gerado em um arquivo textpad tipo sql(.sql).
+
+Ainda no SQL vá em file>Open SQL script abra o arquivo que foi gerado com o comando anterior e execute (use o raio sem o i).
+
+Vá no VScode e crie dentro da pasta database um arquivo nomeado de config.json, com o seguinte conteúdo:
+
+{
+
+    "development": {
+
+      "username": "root",
+
+      "password": "coloque aqui sua senha",
+
+      "database": "coloque aqui o nome do seu banco de dados",
+
+      "host": "127.0.0.1",
+
+      "dialect": "mysql"
+
+        },
+
+    "test": {
+
+      "username": "root",
+
+      "password": null,
+
+      "database": "coloque aqui o nome do seu banco de dados_test",
+
+      "host": "127.0.0.1",
+
+      "dialect": "mysql"
+
+    },
+
+    "production": {
+
+      "username": "root",
+
+      "password": null,
+
+      "database": "coloque aqui o nome do seu banco de dados_production",
+
+      "host": "127.0.0.1",
+
+      "dialect": "mysql"
+
+    }
+
+  }
+
+ 
+
+Após esse procedimento execute no VScode (bash) o seguinte código:
+
+Npm install -g sequelize-cli
+
+Depois execute
+
+Npx sequelize init
+
+Por fim execute (esse deve ser executado para cada tabela),
+
+npx sequelize-cli model:generate --name Colecao --attributes id_colecao:INTEGER,nome_colecao:string
+
+npx sequelize-cli model:generate --name Tamanho --attributes id_tamanho:INTEGER,codigo:string,descricao:string
+
+npx sequelize-cli model:generate --name Cor --attributes id_cor:INTEGER,descricao_cor:string
+
+npx sequelize-cli model:generate --name Vestido --attributes id_vestido:INTEGER,nome_vestido:string,preco:DECIMAL,descricao_vestido:string,id_colecao:INTEGER,id_cor:INTEGER
+
+npx sequelize-cli model:generate --name TamanhoVestido --attributes id_tamanho_vestido:INTEGER,tamanho_id:INTEGER,vestido_id:INTEGER
+
+npx sequelize-cli model:generate --name CorVestido --attributes id_cor_vestido:INTEGER,vestido_id:INTEGER,cor_id:INTEGER
+
+npx sequelize-cli model:generate --name Usuario --attributes id_usuario:INTEGER,nome:string,telefone:string,email:string,nick_name:string,senha:string
+
+npx sequelize-cli model:generate --name EnderecoUsuario --attributes id_endereco_usuario:INTEGER,logradouro_usuario:string,numero_usuario:string,usuario_id:INTEGER,cep:INTEGER,estado:string,cidade:string,complemento:string
+
+npx sequelize-cli model:generate --name Pedido --attributes id_pedido:INTEGER,createdAt:DATE,usuario_id:INTEGER,valor_total_pedido:DECIMAL,status:string,endereco_usuario_id:INTEGER
+
+npx sequelize-cli model:generate --name DetalhePedido --attributes id_detalhe_pedido:INTEGER,pedido_id:INTEGER,quantidade:INTEGER,valor_unitario:DECIMAL,tamanho_vestido_id:INTEGER,vestido_id:INTEGER,cor_vestido_id:INTEGER
+
+
+seeders:
+npx sequelize-cli seed:generate --name usuario
+
+npx sequelize-cli seed:generate --name endereco_usuario
+
+npx sequelize-cli seed:generate --name pedido
+
+npx sequelize-cli seed:generate --name tamanho
+
+npx sequelize-cli seed:generate --name colecao
+
+npx sequelize-cli seed:generate --name vestido
+
+npx sequelize-cli seed:generate --name cor
+
+npx sequelize-cli seed:generate --name cor_vestido
+
+npx sequelize-cli seed:generate --name tamanho_vestido
+
+npx sequelize-cli seed:generate --name detalhe_pedido
+
+
+Rodar as seeders:
+
+npx sequelize-cli db:seed usuario --seed 20211008002054-usuario.js
+
+npx sequelize-cli db:seed endereco_usuario --seed 20211008002147-endereco_usuario.js
+
+npx sequelize-cli db:seed pedido --seed 20211008002200-pedido.js
+
+npx sequelize-cli db:seed tamanho --seed 20211008002209-tamanho.js
+
+npx sequelize-cli db:seed colecao --seed 20211008002216-colecao.js
+
+npx sequelize-cli db:seed vestido --seed 20211008002224-vestido.js
+
+npx sequelize-cli db:seed cor --seed 20211008002233-cor.js
+
+npx sequelize-cli db:seed cor_vestido --seed 20211008002243-cor_vestido.js
+
+npx sequelize-cli db:seed tamanho_vestido --seed 20211008002253-tamanho_vestido.js
+
+npx sequelize-cli db:seed detalhe_vestido --seed 20211008002302-detalhe_pedido.js
+
+
+npx sequelize-cli db:seed:all
+
+npx sequelize-cli db:seed:undo:all
+ 
+
+para rodar as migrations:
+npx sequelize db:migrate
+
+node ./tests/testModelColecao.js
+
+node ./tests/testModelCor.js
+
+node ./tests/testModelCorVestido.js
+
+node ./tests/testModelDetalhePedido.js
+
+node ./tests/testModelEnderecoUsuario.js
+
+node ./tests/testModelPedido.js
+
+node ./tests/testModelTamanho.js
+
+node ./tests/testModelTamanhoVestido.js
+
+node ./tests/testModelUsuario.js
+
+node ./tests/testModelVestido.js
+
+
+
