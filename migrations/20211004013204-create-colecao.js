@@ -3,12 +3,12 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('colecaos', {
       id: {
-        allowNull: false,
+        allowNull: false, // pode ter a create vestido. Primeiro roda a coleção, cor e depois a migration de vestido.
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      id_colecao: {
+      id_colecao: {// remover esse ID.
         type: Sequelize.INTEGER
       },
       nome_colecao: {

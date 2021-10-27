@@ -3,12 +3,12 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     await queryInterface.createTable('cors', {
       id: {
-        allowNull: false,
+        allowNull: false, 
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      id_cor: {
+      id_cor: {// remover esse ID.
         type: Sequelize.INTEGER
       },
       descricao_cor: {

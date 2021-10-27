@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       id_vestido: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER// não faz sentido ter essa ID vestido. Não foi feito uma ligação.
       },
       nome_vestido: {
         type: Sequelize.STRING
